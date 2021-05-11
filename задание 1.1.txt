@@ -1,0 +1,99 @@
+1. Посмотреть, где я
+Tanya@Notebook MINGW64 ~
+$ pwd
+/c/Users/Tanya
+
+2. Создать папку
+Tanya@Notebook MINGW64 ~
+$ mkdir folder
+
+3. Зайти в папку
+Tanya@Notebook MINGW64 ~
+$ cd folder
+Tanya@Notebook MINGW64 ~/folder
+$
+
+4. Создать 3 папки
+mkdir  mustRead
+mkdir  Course
+mkdir  mustRead
+
+5. Зайти в любоую папку
+cd Course
+
+6. Создать 5 файлов (3 txt, 2 json)
+touch day1.txt
+touch  books.txt
+touch day1.git.txt
+touch name.json
+touch otherInf.json
+
+8. Вывести список содержимого папки
+Tanya@Notebook MINGW64 ~
+$ ls Course
+ap7/  ap8/  ap9/  books.txt  day1.git.txt  day1.txt  request1.txt
+
+9. Открыть любой txt файл
+Tanya@Notebook MINGW64 ~
+$ vim day1.txt
+
+10. Написать любой текст
+В vim : нижамием I (Insert), пишем текст
+
+11. Сохранить и выйти
+В vim команда  :wq
+
+12. Выйти из папки на уровень выше
+cd ..
+
+13. Переместить файл в другую папку
+Tanya@Notebook MINGW64 ~
+$ mv Course/request1.txt mustRead
+
+Tanya@Notebook MINGW64 ~
+$ ls mustRead
+books.txt  request1.txt
+
+14.Cкопировать файл в другую папку
+Tanya@Notebook MINGW64 ~
+$ cp mustRead/request1.txt Course
+
+15.Найти файл по имени
+Tanya@Notebook MINGW64 ~
+$ find . -name "request1.txt*"
+find: './AppData/Local/ElevatedDiagnostics': Permission denied
+find: './AppData/Local/Temp/EDGEMITMP_61453.tmp': Permission denied
+./Course/request1.txt
+
+16.Посмотреть в реальном времени текстовый файл
+Tanya@Notebook MINGW64 /c/Users/tanya/myInform
+$ cat text12.txt
+English language levels description:
+English Basic User (A1, A2) A1 (Beginner) A2 (Elementary English)
+English Independent User (B1, B2) B1 (Intermediate English) B2 (Upper-Intermediate English)
+Proficient English User (C1, C2) C1 (Advanced English) C2 (Proficiency English)
+
+17.Вывести несколько первых строк из текстового файла
+Tanya@Notebook MINGW64 /c/Users/tanya/myInform
+$ head -n2 text12.txt
+English language levels description:
+English Basic User (A1, A2) A1 (Beginner) A2 (Elementary English)
+
+18.Вывести несколько последних строк из текстового файла
+Tanya@Notebook MINGW64 /c/Users/tanya/myInform
+$ tail -n2 text12.txt
+English Independent User (B1, B2) B1 (Intermediate English) B2 (Upper-Intermediate English)
+Proficient English User (C1, C2) C1 (Advanced English) C2 (Proficiency English)
+
+19.Просмотреть содержимое длинного файла 
+Tanya@Notebook MINGW64 /c/Users/tanya/Course
+$ less request1.txt
+
+20. Вывести дату и время
+Tanya@Notebook MINGW64 ~
+$ date
+Tue Apr 27 22:47:02     2021
+
+
+
+
