@@ -1,0 +1,7 @@
+#!/bin/bash
+cd Course
+mkdir ap7 ap8 ap9
+cd ap8
+touch ap8/tet7.txt ap8/tet8.txt ap8/tet9.txt ap8/nam7.json ap8/nam8.json
+ls -la;
+mv ap8/tet7.txt ap8/tet8.txt ap9
