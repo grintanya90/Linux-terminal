@@ -1,0 +1,70 @@
+   *Установить Git:
+sudo apt-get install git
+
+   *Залогиниться в корпоративный Gitlab
+Выводим публичный ключ SSH      cat id_rsa.pub
+Копируем публичный ключ ssh     Ctr+C
+Добавляем SSH-ключ на GitLab    Add key in the field 'Add new key' in Git lab
+
+  *Склонировать проект Automation Onboarding 
+git clone git@gitlab.activeplatform.com:at_guild/auto-onboard.git
+
+
+
+   Linux:
+   
+   1.Создать папку                                                            mkdir tatsiana_harbatsko  
+            
+   2.Зайти в папку                                                            cd tatsiana_harbatsko
+   
+   3.Создать файл task.txt                                                    touch task.txt
+   
+   4.Посмотреть текущее расположение                                          pwd
+     Вывод:
+     
+   5.Создать папку tatsiana_harbatsko_1                                       mkdir tatsiana_harbatsko_1
+   
+   6.Посмотреть скрытые файлы и папки                                         ls -la
+   Вывод:
+   
+   7.Открыть файл task.txt                                                    nano task.txt
+    внести в него текст,                                                      Ctr+V
+    сохранить изменения                                                       Ctr+O -> Enter -> Ctr+X
+
+   7.1 Вывести все строчки в которых содержится "When" c номерами строк       grep -n When task.txt
+   Вывод:                                                                     1:When I log in as manager to AP OCP
+                                                                              2:    When I open "Operations" -> "Users" via AP OCP
+                                                                              4:    When I open "Settings" -> "System Log" via AP OCP
+                                                                              6:    When I open "Operations" -> "Tasks" via AP OCP
+                                                                              8:    When I open "Settings" -> "Attribute Categories" via AP OCP
+                                                                              10:    When I open "Operations" -> "Accounts" via AP OCP
+
+
+   8.Зайти в папку tatsiana_harbatsko_1                                       cd tatsiana_harbatsko_1
+   
+   9.Создать файл task1.json                                                  touch task1.json
+   
+   10.Зайти в папку tatsiana_harbatsko                                        cd tatsiana_harbatsko
+   
+   11.Вывести первые 3 строчки task.txt                                       head -n3 task.txt
+   Вывод:
+
+   12.Написать скрипт .sh который меняет время на сервере
+   
+   13.Записать все выполненные команды с выводом                             touch linux.txt
+    и комментариями к ним в файл linux.tx                                    Enter   text,  Ctr+O -> Enter -> Ctr+X
+    
+   14.Создать ветку tatsiana_harbatsko_linux, перейти в нее                  git checkout -b tatsiana_harbatsko_linux
+
+   15.Добавить файл linux.txt в индекс                                       git add linux.txt
+   
+   16.Создать коммит с описанием того, что добавляем                         git commit -m 'add 'Linux task_1'
+   
+   17.Пушим в удалённый репозиторий                                          git push
+
+
+   18.Создаём мержреквест в ветку master
+
+    
+
+   
